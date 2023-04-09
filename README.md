@@ -1,5 +1,9 @@
 # password-generator
 
+My live version can be found here: 
+https://harmonious-dieffenbachia-d306e7.netlify.app/
+
+
 This Random Password Generator was part of Scrimba FrontEnd developer course. You can find the course here:
 https://scrimba.com/learn/frontend/solo-project-pro-password-generator-cR9B46Sg
 
