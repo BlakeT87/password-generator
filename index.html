@@ -12,12 +12,14 @@
         <h1 id="title">Generate a</h1>
         <h2 id="title-2">random password</h2    >
         <p id="tagline">Never use an insecure password again.</p>
+        <input id="password-length" placeholder="Password Length" type="number" minlength="8" maxlength="16">
         <button onclick="getPasswords()" id="get-passwords">Generate Passwords</button>
     </div>
     <div id="passwords">
         <button class="passwords" onclick="copyFirstPassword()" id="first-password"></button>
         <button class="passwords" onclick="copySecondPassword()" id="second-password"></button>
     </div>
+    <button id="clear" onclick="clearForm()">Clear Passwords</button>
 
 <script src="index.js"></script>
 </body>

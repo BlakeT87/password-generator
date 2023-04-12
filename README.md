@@ -14,3 +14,5 @@ Key paramters:
 
 Strecth Goals:
 - Copy password to clipboard on click
+- Add functionality to allow user to decide password length
+- Create button to clear passwords

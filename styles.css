@@ -62,3 +62,13 @@ body{
     height: 30px;
     margin-right: 20px;
 }
+
+#clear{
+    background-color: #10B981;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 20px;
+}

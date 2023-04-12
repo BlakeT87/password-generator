@@ -5,21 +5,30 @@ let firstPassword = document.getElementById("first-password")
 let secondPassword = document.getElementById("second-password")
 
 let clicked = false 
+
 function getPasswords(){
-    if (clicked === false){
-     for (let i = 0; i < 15; i++) {
+    let passwordLength = document.getElementById("password-length").value
+    if (clicked === false && passwordLength > 7 && passwordLength < 17){
+     for (let i = 0; i < passwordLength; i++) {
         let characterChoice = (Math.floor(Math.random() * characters.length))
         let password = characters[characterChoice]
         firstPassword.textContent += password
     }
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < passwordLength; i++) {
         let characterChoice = (Math.floor(Math.random() * characters.length))
         let password = characters[characterChoice]
         secondPassword.textContent += password
     }
     clicked = true
-
+    } else {
+        alert("Password must be 8-16 characters long!")
+    }
 }
+
+function clearForm(){
+    firstPassword.textContent = ""
+    secondPassword.textContent = ""
+    clicked = false
 }
 
 function copyFirstPassword(){
