@@ -19,10 +19,10 @@ function getPasswords(){
         let password = characters[characterChoice]
         secondPassword.textContent += password
     }
-    clicked = true
-    } else {
+    } else if (clicked === false && passwordLength < 8 || passwordLength > 16) {
         alert("Password must be 8-16 characters long!")
     }
+    clicked = true
 }
 
 function clearForm(){
